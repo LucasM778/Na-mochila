@@ -7,52 +7,55 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
 <body>
-   <!-- Menu  -->
+   <!-- Imagem Logo  -->
     <div class="bg-danger">
       <div class ="container col-1 ">
         <img src="./Imagem/LogoSemFundo.png" alt="Logo na Mochila Errada" width="100" height="100" />
       </div>  
     </div>
   
-   
-    <nav class="navbar navbar-expand-lg bg-danger "  data-bs-theme="light">
-  <div class="container-fluid">
-    <a class="navbar-brand text-light" href="index.php">Menu</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active text-light" aria-current="page" href="#">Achado</a>
-        </li> 
-        <li class="nav-item">
-          <a class="nav-link text-light" href="cadastrar.php">Cadastrar</a>
-        </li>
-        <!--Categorias -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Categorias
-          </a>
-          <ul class="dropdown-menu text-light">
-            <li><a class="dropdown-item" href="#">Vestuario</a></li>
-            <li><a class="dropdown-item" href="#">Eletronicos</a></li>
-             <li><a class="dropdown-item" href="#">Livros</a></li>
-              <li><a class="dropdown-item" href="#">Material Escolar</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Outros</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
+   <!-- Menu  -->
+  <nav class="navbar navbar-expand-lg bg-danger "  data-bs-theme="light">
+    <div class="container-fluid">
+        <a class="navbar-brand text-light" href="index.php">Menu</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#">Achado</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link text-light" href="cadastrar.php">Cadastrar</a>
+          </li>
 
-      <!--Pesquisar -->
-      <form class="d-flex " role="search">
-        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search"/>
-        <button class="btn btn btn-primary" type="submit">Buscar</button>
-      </form>
+          <!--Categorias -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categorias
+            </a>
+            <ul class="dropdown-menu text-light">
+              <li><a class="dropdown-item" href="#">Vestuario</a></li>
+              <li><a class="dropdown-item" href="#">Eletronicos</a></li>
+              <li><a class="dropdown-item" href="#">Livros</a></li>
+              <li><a class="dropdown-item" href="#">Material Escolar</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Outros</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+
+        
+
+        <!--Pesquisar -->
+        <form class="d-flex " role="search">
+          <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search"/>
+          <button class="btn btn btn-primary" type="submit">Buscar</button>
+        </form>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
