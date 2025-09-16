@@ -8,6 +8,13 @@
 </head>
 <body>
    <!-- Menu  -->
+    <div class="bg-danger">
+      <div class ="container col-1 ">
+        <img src="./Imagem/LogoSemFundo.png" alt="Logo na Mochila Errada" width="100" height="100" />
+      </div>  
+    </div>
+  
+   
     <nav class="navbar navbar-expand-lg bg-danger "  data-bs-theme="light">
   <div class="container-fluid">
     <a class="navbar-brand text-light" href="index.php">Menu</a>
@@ -40,6 +47,7 @@
           <a class="nav-link disabled" aria-disabled="true">Disabled</a>
         </li>
       </ul>
+
       <!--Pesquisar -->
       <form class="d-flex " role="search">
         <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search"/>
