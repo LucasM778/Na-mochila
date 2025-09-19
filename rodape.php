@@ -1,69 +1,48 @@
-<script src="./js/bootstrap.bundle.min.js"></script>
-
-<footer class=" text-light py-4 mt-5" style="background-color: var(--blue-700);">
-    <div class="container">
-        <div class="row">
-        <!-- Coluna 1 -->
-        <div class="col-lg-4 mb-3">
-            <h5>Sobre</h5>
-            <p class=" text-white">
-            Projetado e construído  pela Turma de DS
-            </p>
+<footer class="text-light py-4 mt-5" style="background-color: #003366;">
+  <div class="container">
+    <div class="row">
+      <!-- Coluna 1 -->
+      <div class="col-md-4 mb-3">
+        <h5 class="fw-bold">Na Mochila Errada</h5>
+        <p class="small mb-0">
+          Um projeto para facilitar o encontro de itens perdidos e devolver sorrisos.
+        </p>
+      </div>
+      <!-- Coluna 2 -->
+      <div class="col-md-3 mb-3">
+        <h5 class="fw-bold">Links úteis</h5>
+        <ul class="list-unstyled small">
+          <li><a href="index.php" class="text-light text-decoration-none">Início</a></li>
+          <li><a href="cadastrar.php" class="text-light text-decoration-none">Cadastrar Item</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Achados</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Contato</a></li>
+        </ul>
+      </div>
+      <!-- Coluna 3 -->
+      <div class="col-md-3 mb-3">
+        <h5 class="fw-bold">Contatos</h5>
+        <ul class="list-unstyled small">
+          <li>📞 (11) 99999-9999</li>
+          <li>📧 contato@namochilaerrada.com</li>
+        </ul>
+      </div>
+      <!-- Coluna 4 -->
+      <div class="col-md-2 mb-3">
+        <h5 class="fw-bold">Redes</h5>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-light fs-5"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-light fs-5"><i class="bi bi-twitter"></i></a>
         </div>
-
-        <!-- Coluna 2 -->
-        <div class="col-lg-3 mb-3">
-            <h5>Contatos</h5>
-            <ul class="list-unstyled small">
-            <li>
-                Tel: 1515151515
-            </li>
-            <li>
-                email: @gmailNaMochila
-            </li>
-            </ul>
-        </div>
-
-        <!-- Coluna 3 -->
-        <div class="col-lg-3 mb-3">
-            <h5>Redes Sociais</h5>
-            <ul class="list-unstyled small">
-            <li>
-                Facebook
-            </li>
-            <li>
-                Instagram
-            </li>
-            </ul>
-        </div>
-
-        <!-- Coluna 4 -->
-        <div class="col-lg-2 mb-3">
-            <h5>Links</h5>
-        </div>
-        </div>
-
-        <hr class="border-secondary">
-
-        <div class="text-center small text-muted">
-        © 2025 - Todos os direitos reservados.
-        </div>
+      </div>
     </div>
+    <hr class="border-light">
+    <div class="text-center small">
+      © 2025 - Na Mochila Errada. Todos os direitos reservados.
+    </div>
+  </div>
 </footer>
 
- <!-- Palleta de cores azul do bootstrap para o rodapé -->
-<style>
-:root {
-  --blue-100: #cfe2ff;
-  --blue-200: #9ec5fe;
-  --blue-300: #6ea8fe;
-  --blue-400: #3d8bfd;
-  --blue-500: #0d6efd;
-  --blue-600: #0a58ca;
-  --blue-700: #084298;
-  --blue-800: #052c65;
-  --blue-900: #031633;
-}
-</style>
-</body>
-</html>
+<!-- Inclua os scripts no final -->
+<script src="./js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
