@@ -65,6 +65,8 @@
 
           
 
+          
+
           <!--Categorias -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -79,6 +81,12 @@
               <li><a class="dropdown-item" href="#">Outros</a></li>
             </ul>
           </li>
+
+          
+            <a class="nav-link" href="instalar.php" > 
+              Instalar o banco 
+            </a>
+      
   
         
         </ul>
