@@ -1,3 +1,4 @@
+<?php include "logado.php"; ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -106,3 +107,4 @@
       </div>
     </div>
   </nav>
+  
