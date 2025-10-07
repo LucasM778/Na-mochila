@@ -31,8 +31,9 @@
         <h5 class="fw-bold">Redes</h5>
         <div class="d-flex gap-3">
           <a href="#" class="text-light fs-5"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.instagram.com/matheushiga60?igsh=MWc2aTRrcXBvZmhlaw==" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
           <a href="#" class="text-light fs-5"><i class="bi bi-twitter"></i></a>
+          <a href="https://www.youtube.com/@MathigaZ22" class="text-light fs-5"><i class="bi bi-youtube"></i></a>
         </div>
       </div>
     </div>

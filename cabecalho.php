@@ -5,20 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina inicial</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+     <script src="./js/bootstrap.bundle.min.js"></script>
+  
+
+    
+    <style>
+    :root {
+      --bs-primary: #094e94ff; 
+      --bs-secondary: #4caf50; 
+      --bs-danger: #003366;
+    }
+    .bg-primary {
+      background-color: var(--bs-primary) !important;
+    }
+
+    .bg-danger {
+      background-color: var(--bs-danger) !important;
+    }
+
+    .dropdown-menu {
+      background-color: var(--bs-danger);
+    }
+
+    .dropdown-menu .dropdown-item {
+      color: #fff;
+    }
+
+    .dropdown-menu .dropdown-item:hover {
+      background-color: var(--bs-primary);
+    }
+  </style>
+    
 </head>
 <body>
+
+
+
    <!-- Imagem Logo  -->
-    <div class="bg-danger">
-      <div class ="container col-1 ">
-        <img src="./Imagem/LogoSemFundo.png" alt="Logo na Mochila Errada" width="100" height="100" />
-      </div>  
+    <div class="bg-primary">
+  
+     
     </div>
   
    <!-- Menu  -->
-  <nav class="navbar navbar-expand-lg bg-danger "  data-bs-theme="light">
+  <nav class="navbar navbar-expand-lg bg-primary "  data-bs-theme="dark">
     <div class="container-fluid">
         <a class="navbar-brand text-light" href="index.php">Menu</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -29,6 +62,8 @@
           <li class="nav-item">
             <a class="nav-link text-light" href="cadastrar.php">Cadastrar</a>
           </li>
+
+          
 
           <!--Categorias -->
           <li class="nav-item dropdown">
@@ -44,10 +79,14 @@
               <li><a class="dropdown-item" href="#">Outros</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li>
+  
+        
         </ul>
+
+             <div class ="container col-3 ">
+              <img src="./Imagem/mochila.png" class="img-fluid rounded-circle "alt="Logo na Mochila Errada" width =100 height=68/>
+          </div>
+       
 
         
 
