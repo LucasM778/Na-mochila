@@ -1,42 +1,73 @@
+<?php
+include "conexao.php";
+
+//  garante que funcione em todos os includes
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
+// Se já estiver logado, volta para o index
+if (isset($_SESSION['usuario'])) {
+    header("Location: index.php");
+    exit;
+}
+
+// Verifica login
+if (isset($_POST['entrar'])) {
+    $login = trim($_POST['login']);
+    $senha = trim($_POST['senha']);
+
+    if (empty($login) || empty($senha)) {
+        $erro = "Por favor, preencha todos os campos.";
+    } else {
+        $sql = "SELECT * FROM USUARIOS WHERE LOGIN = ? AND ATIVO = 1";
+        $stmt = $conexao->prepare($sql);
+        $stmt->bind_param("s", $login);
+        $stmt->execute();
+        $resultado = $stmt->get_result();
+
+        if ($usuario = $resultado->fetch_assoc()) {
+            if ($usuario['SENHA'] == $senha) {
+                $_SESSION['usuario'] = $usuario['LOGIN'];
+                header("Location: index.php");
+                exit;
+            } else {
+                $erro = "Senha incorreta!";
+            }
+        } else {
+            $erro = "Usuário não encontrado ou inativo!";
+        }
+
+        $stmt->close();
+    }
+}
+?>
+
 <?php include "cabecalho.php"; ?>
+<main class="container my-5">
+<div class="container mt-5 col-md-4">
+  <h3 class="text-center mb-4">Acesse sua conta</h3>
 
-<div class="container">
+  <?php if (isset($_GET['erro']) && $_GET['erro'] == 'loginnecessario'): ?>
+    <div class="alert alert-warning">⚠️ Faça login para cadastrar um item.</div>
+  <?php endif; ?>
 
-<div class="row">
-    <div class="col-md-6 offset-md-3">
+  <?php if (isset($erro)): ?>
+    <div class="alert alert-danger"><?= htmlspecialchars($erro) ?></div>
+  <?php endif; ?>
 
-        <div class="card mt-3 ">
-
-            <form class="card-body cardbody-color rounded-3 p-lg-5" method="post" action="verificar_login.php">
-
-                <div class="text-center">
-                    <img src="./Imagem/Logo Team Mochila.png" class="img-fluid rounded shadow-sm"                                   
-                    alt="Logo Na Mochila Errada" style="max-height: 300px; object-fit: contain;">
-                </div>
-                </div>
-                <div class="mb-3 mt-3">
-                    <input type="text" class="form-control" name="Login" id="Login" required aria-describedby="Login" placeholder="Digite seu login">
-                </div>
-                <div class="mb-3 mt-3">
-                    <input type="password" class="form-control" id="Senha" name="Senha" required placeholder="Digite sua senha">
-                </div>
-                <div class="text-center"><button type="submit" class="btn btn-color px-5 mb-5 w-100" style="background-color:#F7A81B">Entrar</button></div>
-                <input type="hidden" name="ReturnUrl" value="/" />
-                <div id="mensagem" class="form-text text-center mb-5 text-dark">
-                    <?php
-                        if(isset($_GET["erro"]) && !empty($_GET["erro"]))
-                        {
-                            echo "<div class='alert alert-danger'>";
-                            echo $_GET["erro"];
-                            echo "</div>";
-                        }
-                    ?>
-                </div>
-            </form>
-        </div>
-
+  <form method="POST" class="bg-white p-4 shadow rounded">
+    <div class="mb-3">
+      <label>Usuário</label>
+      <input type="text" name="login" class="form-control" required>
     </div>
+    <div class="mb-3">
+      <label>Senha</label>
+      <input type="password" name="senha" class="form-control" required>
+    </div>
+    <button class="btn btn-primary w-100" name="entrar">Entrar</button>
+  </form>
 </div>
-</div>
+</main>
 
 <?php include "rodape.php"; ?>

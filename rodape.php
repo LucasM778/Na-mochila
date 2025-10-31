@@ -13,8 +13,7 @@
         <h5 class="fw-bold">Links úteis</h5>
         <ul class="list-unstyled small">
           <li><a href="index.php" class="text-light text-decoration-none">Início</a></li>
-          <li><a href="cadastrar.php" class="text-light text-decoration-none">Cadastrar Item</a></li>
-          <li><a href="#" class="text-light text-decoration-none">Achados</a></li>
+          <li><a href="achados.php" class="text-light text-decoration-none">Achados</a></li>
           <li><a href="#" class="text-light text-decoration-none">Contato</a></li>
         </ul>
       </div>
@@ -44,6 +43,6 @@
   </div>
 </footer>
 
-<!-- Inclua os scripts no final -->
+
 <script src="./js/bootstrap.bundle.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
