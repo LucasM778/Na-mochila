@@ -75,11 +75,11 @@ if ($conexao->query($sql)) {
 
 $sql_insert = "INSERT INTO USUARIOS (LOGIN, SENHA) VALUES 
 ('ADMIN', '123'),
-('FELIPE MATHEUS YOSHIDA LAZARI', '123senha'),
-('LEONEL FRANCISCO DAMIAO', '123senha'),
-('LUCAS MATHEUS DE SOUZA DOS SANTOS', '123senha'),
-('MATHEUS DA CRUZ SAITU HIGA', '123senha'),
-('MURILLO DE PAULA PEREIRA', '123senha')";
+('FELIPE ', '123'),
+('LEONEL ', '123'),
+('LUCAS ', '123'),
+('MATHEUS ', '123'),
+('MURILLO ', '123')";
 
 $check = $conexao->query("SELECT COUNT(*) as total FROM USUARIOS");
 $row = $check->fetch_assoc();
