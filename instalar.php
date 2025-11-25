@@ -77,7 +77,7 @@ $sql_insert = "INSERT INTO USUARIOS (LOGIN, SENHA) VALUES
 ('ADMIN', '123'),
 ('FELIPE ', '123'),
 ('LEONEL ', '123'),
-('LUCAS ', '123'),
+('LUCAS', '123'),
 ('MATHEUS ', '123'),
 ('MURILLO ', '123')";
 
