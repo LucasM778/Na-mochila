@@ -80,16 +80,26 @@ include "cabecalho.php";
 ?>
 
 
-<main class="container my-5 col-md-6 ">
-
-
-
-
+<main class="container my-5 col-md-10"> 
   <div class="card shadow p-4 rounded-4">
-    <h3 class="text-center mb-4 text-danger">
-      <i class="fa-solid fa-box-open me-2"></i>Cadastrar Novo Item
-    </h3>
+
     <form method="POST" enctype="multipart/form-data" class="needs-validation" novalidate>
+
+      <!-- Título + Barra de Status dentro do form -->
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3 class="text-danger m-0">
+          <i class="fa-solid fa-box-open me-2"></i> Cadastrar Novo Item
+        </h3>
+
+        <select name="status" class="form-select w-auto ms-3">
+          <option value="Achado">Achado</option>
+          <option value="Perdido">Perdido</option>
+        </select>
+      </div>
+
+
+  <form method="POST" enctype="multipart/form-data" class="needs-validation" novalidate>
+
       <div class="mb-3">
         <label>Nome do Item</label>
         <input type="text" name="nome" class="form-control" required>
@@ -111,14 +121,6 @@ include "cabecalho.php";
       </div>
 
       <div class="mb-3">
-        <label>Status</label>
-        <select name="status" class="form-control">
-          <option value="Achado">Achado</option>
-          <option value="Perdido">Perdido</option>
-        </select>
-      </div>
-
-      <div class="mb-3">
         <label>Imagem</label>
         <input type="file" name="imagem" class="form-control" accept="image/*">
       </div>
@@ -126,11 +128,11 @@ include "cabecalho.php";
       <button name="cadastrar" class="btn btn-danger w-100 rounded-pill py-2">
         <i class="fa-solid fa-upload me-2"></i>Cadastrar
       </button>
+
     </form>
   </div>
 </main>
 
-<!--  sucesso -->
 <div class="modal fade" id="cadastroSucesso" tabindex="-1" aria-labelledby="cadastroSucessoLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content rounded-4 border-0 shadow-lg">
@@ -152,36 +154,34 @@ include "cabecalho.php";
   </div>
 </div>
 
-  <style>
-  main {
-    margin-top: 80px;
-    margin-bottom: 80px ;
-  }
+<style>
+main {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
 
-  .card {
-    min-height: 750px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-top: 40px ;
-    padding-bottom: 40px ;
-  }
+.card {
+  min-height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
-  form .form-control, 
-  form textarea {
-    min-height: 50px; 
-    font-size: 1rem;
-    padding: 10px 14px;
-  }
+form .form-control, 
+form textarea {
+  min-height: 45px;
+  font-size: 1rem;
+  padding: 10px 14px;
+}
 
-  form .mb-3 {
-    margin-bottom: 1.5rem ; 
-  }
+form .mb-3 {
+  margin-bottom: 1.2rem;
+}
 
-  button.btn-danger {
-    padding: 14px 0 ;
-    font-size: 1.1rem;
-  }
+button.btn-danger {
+  padding: 12px 0;
+  font-size: 1.1rem;
+}
 </style>
+
 
 <?php include "rodape.php"; ?>

@@ -85,10 +85,10 @@
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   padding: 30px;
   text-align: center;
-  height: 100%; /* Faz o card ocupar toda a altura da coluna */
+  height: 100%; 
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* distribui texto e botão */
+  justify-content: space-between; 
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -110,7 +110,7 @@
 }
 
 .feature-card p {
-  flex-grow: 1; /* Faz o texto se ajustar sem mudar o tamanho do card */
+  flex-grow: 1; 
   color: #555;
 }
 
