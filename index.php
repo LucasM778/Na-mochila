@@ -114,19 +114,102 @@
   color: #555;
 }
 
+.img-standard {
+    width: 1000%;       /* ocupa toda a largura do card/área */
+    height: 500px;     /* altura fixa  */
+    object-fit: cover; /* corta a imagem mantendo proporção */
+    border-radius: 10px;
+}
+.carousel-item img {
+    width: 100vw;       
+    height: 60vh;       
+    object-fit: cover;  
+}
+
+.carousel-inner {
+    border-radius: 25px;        /* arredonda o container inteiro */
+    overflow: hidden;           /* impede imagens de escaparem do arredondamento */
+}
+
+
+
   </style>
 </head>
 <body >
+ <section class="welcome-section pt-1">
 
+<!-- SLIDES / CARROSSEL FULL WIDTH -->
+<div id="carouselHome" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicadores -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="3"></button>
+  </div>
+
+  <!-- Imagens -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="https://etecbauru.com.br/" target="_blank">
+          <img src="imagem/Etec.jpg" title="Predio da Etec Rodrigues de Abreu">
+        </a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="bg-dark px-3 py-1 rounded-3 opacity-75">Encontre seus objetos rapidamente</h5>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="./imagem/Logo.jpg" alt="Comunidade">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="bg-dark px-3 py-1 rounded-3 opacity-75">Ajudando a comunidade escolar</h5>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="./imagem/bolsa.png" alt="mochila">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="bg-dark px-3 py-1 rounded-3 opacity-75">Achou ? Devolva</h5>
+      </div>
+    </div>
+
+
+    <div class="carousel-item">
+      <a href="https://etecbauru.com.br/vagas_remanescentes.php" target="_blank">
+          <img src="imagem/banner.jpeg" title="Vagas Remanescentes">
+        </a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="bg-dark px-3 py-1 rounded-3 opacity-75">Notícias</h5>
+      </div>
+    </div>
+  </div>
+
+  <!-- Botões -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+
+</section>
 
 <main class="container my-5 ">
+
+
+
   <!-- boas-vindas -->
   <section class="welcome-section pt-0">
-    <img src="./imagem/LogoSemFundo.png" alt="Logo Na Mochila Errada" width="200" height="200" class="mb-3">
+    
     <h1>Bem-vindo ao <span style="color:#c62828;">Na Mochila Errada</span></h1>
     <p>O lugar certo para registrar, encontrar e devolver itens perdidos de forma fácil e solidária.</p>
     <a href="achados.php" class="btn btn-main mt-3"><i class="fa-solid fa-bag-shopping me-2"></i>Ver Itens Achados</a>
+    
   </section>
+
 
  <section class="container text-center mt-5">
   <div class="row justify-content-center align-items-stretch g-4">
